@@ -35,7 +35,7 @@ function get_got_quote() {
     } else {
         $data = json_decode($response, true);
         $quote = $data['sentence'];
-        if(str_contains($quote, 'fuck') || str_contains($quote, 'Fuck') || str_contains($quote, 'whore') || str_contains($quote, 'kill')){
+        if(str_contains($quote, 'fuck') || str_contains($quote, 'Fuck') || str_contains($quote, 'whore') || str_contains($quote, 'kill')|| str_contains($quote, 'Kill')){
             $quote = "***";
         }
         $character = $data['character']['name'];
