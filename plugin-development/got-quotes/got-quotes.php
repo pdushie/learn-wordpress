@@ -35,6 +35,9 @@ function get_got_quote() {
     } else {
         $data = json_decode($response, true);
         $quote = $data['sentence'];
+        if(str_contains($quote, 'fuck') || str_contains($quote, 'Fuck') || str_contains($quote, 'whore') || str_contains($quote, 'kill')){
+            $quote = "***";
+        }
         $character = $data['character']['name'];
         wp_send_json_success([
             'quote' => $quote,
