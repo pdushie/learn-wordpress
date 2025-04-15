@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Game of Thrones (GOT) Random Quotes
-Description: Display Game of Thrones quotes that update every few seconds.
+Description: Display Game of Thrones quotes that update every few seconds. [got_quote]
 Version: 1.0
 Author: Philip Dushie
 */
